@@ -1,0 +1,31 @@
+/*Mobile*/
+h1 {
+    font-size:1.8em;
+    text-align:center;
+    font-weight:500;
+    color:var(--white-text-color);
+}
+h2 {
+    font-size:1.4em;
+    text-align:center;
+    font-weight:100;
+    margin-top:20px;
+    margin-bottom:75px;
+}
+h3, h4 {
+    font-size:1.3em;
+    text-align:center;
+    font-weight:500;
+}
+h5 {
+    color:#000;
+    font-weight:bold;
+}
+.background-image {
+    background-image:url(/images/explore.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    min-height:300px;
+    
+}

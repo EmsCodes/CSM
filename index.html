@@ -6,6 +6,8 @@
       name="description"
       content="A place for people to explore the Community Science Museum"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous">
@@ -13,93 +15,104 @@
   </head>
   <body>
     <header>
-       <img src="images/logo.png" alt="Community Science Museums logo">
-       <nav>
+      <a href="index.html">
+          <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
+      </a>
+      <div class="drop-down">
+      <label for="hamburger-menu">
+        <i class="fas fa-bars"></i>
+     </label>
+     <input type="checkbox" id="hamburger-menu"/>
+       <nav> 
          <ul>
            <li><a href="index.html">Home</a></li>
-           <li><a href="explore.html">Explore</a></li>
-           <li><a href="visit.html">Visit</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="contact.html">Contact</a></li>
+           <li><a href="explore.html"class="inactive">Explore</a></li>
+           <li><a href="visit.html"class="inactive">Visit</a></li>
+           <li><a href="about.html"class="inactive">About</a></li>
+           <li><a href="contact.html"class="inactive">Contact</a></li>
          </ul>
        </nav>
-      <label for="hamburger-menu" class="hamburger">
-         <i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      </div>
        <i class="fab fa-facebook-square"></i>
        <i class="fab fa-instagram"></i>
        <i class="far fa-comment-alt"></i>
     </header>
     <main>
         <h1>Community Science Museum</h1>
-        <h2>"Explore Toghether"</h2>
-          <div class="CTA">
-            <a href="explore.html" type="button">Explore</a>
-          </div>
-          <div class="CTA">
-            <a href="visit.html" type="button">Visit</a>
-          </div>
-        <section>
-          <h3>Check out our latest news</h3>
+        <h2>Explore Toghether</h2>
+        <div class="index-cta">
+          <a href="explore.html" type="button">
+            <div class="CTA">
+              Explore
+            </div>
+          </a>
+          <a href="visit.html" type="button">
+            <div class="CTA" id="purple-button">
+              Visit
+            </div>
+          </a>
+        </div>  
+        <section class="main">
+          <section class="blur">
+          <h3>Latest news</h3>
           <a href="#news">
-          <div>
-            <img src="images/Night-at-museum.jpg" alt="a stuffed elephant standing i a large old looking museum hall">
-            <h4>"Night at the museum"</h4>
+            <img src="images/Night-at-museum.jpg" class="images"
+            alt="a stuffed elephant standing i a large old looking museum hall"> 
+          <h4>"Night at the museum"</h4>
             <p>
               Get your family togheter for an exciting
               night in the museum as you sleep over beside the
               dinosaurs and the science displays.
             </p>
             <p>
-              <a href="visit.html" class="link"> Read more
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <a href="visit.html" class="link"> read more
+                <i class="fas fa-chevron-right"></i>
+              </a>   
             </p>
-          </div>
+          </a> 
+          </section>
+          <section class="blur">
           </a>
           <a href="#robotics">
-          <div>
-            <img src="images/vr-glasses.jpg" alt="red coloured image of a girl looking up with VR-glasses on">
+            <img src="images/vr-glasses.jpg" class="images"
+                alt="red coloured image of a girl looking up with VR-glasses on">
             <h4>Robotics and AI</h4>
             <p>
               The information revolution is here, and robotics
               and artificial intelligence are the science of the future.
             </p>
             <p>
-              <a href="visit.html" class="link"> Read more
-                <i class="fas fa-arrow-right"></i>
+              <a href="visit.html" class="link"> read more
+                <i class="fas fa-chevron-right"></i>
               </a>
             </p>
-          </div>
+          </section>
+          <section class="blur">
           <a>
           <a href="#teachers">
-          <div>
+            <img src="images/VR-painting.jpg" class="images" alt="boy painting with VR-glasses on">
             <h4>For teachers</h4>
             <p>
               As a community-driven museum we want to work with schools 
               to create places of learning and exploring.
             </p>
             <p>
-              <a href="visit.html" class="link"> Read more
-                <i class="fas fa-arrow-right"></i>
+              <a href="visit.html" class="link"> read more
+                <i class="fas fa-chevron-right"></i>
               </a>
             </p>
-          </div>
           <a>
+          </section>
         </section>
     </main>
   </body>
   <footer>
-      <h3>Sign up for our newsletter</h3>
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="far fa-comment-alt"></i>
-      <ul>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="visit.html">Adress/location</a></li>
-        <li><a href="contact.html"></a>Contact</li>
-      </ul>
-     &copy;Endre Makra-Stenkløv
+    <h5>Sign up for our newsletter</h5>
+    <ul class="footer-navigation" aria-label="">
+      <li><a href="about.html">About us</a></li>
+      <li><a href="visit.html">Adress/location</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+   &copy;Endre Makra-Stenkløv
   </footer>
 </html>

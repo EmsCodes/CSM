@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home - Community Science Museum</title>
+    <title>Explore - Community Science Museum</title>
     <meta
       name="description"
-      content="A place for people to explore the Community Science Museum"/>
+      content="Discover everything the Community Science Museum has to offer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/explore.css" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous">
@@ -13,26 +15,32 @@
   </head>
   <body>
     <header>
-       <img src="images/logo.png" alt="Community Science Museums logo">
-       <nav>
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="index.html">Explore</a></li>
-           <li><a href="index.html">Visit</a></li>
-           <li><a href="index.html">About</a></li>
-           <li><a href="index.html">Contact</a></li>
-         </ul>
-       </nav>
-      <label for="hamburger-menu" class="hamburger">
-         <i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
-       <i class="fab fa-facebook-square"></i>
-       <i class="fab fa-instagram"></i>
-       <i class="far fa-comment-alt"></i>
-    </header>
+        <a href="index.html">
+            <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
+        </a>
+        <div class="drop-down">
+        <label for="hamburger-menu">
+          <i class="fas fa-bars"></i>
+       </label>
+       <input type="checkbox" id="hamburger-menu"/>
+         <nav> 
+           <ul>
+             <li><a href="index.html"class="inactive">Home</a></li>
+             <li><a href="explore.html">Explore</a></li>
+             <li><a href="visit.html"class="inactive">Visit</a></li>
+             <li><a href="about.html"class="inactive">About</a></li>
+             <li><a href="contact.html"class="inactive">Contact</a></li>
+           </ul>
+         </nav>
+        </div>
+         <i class="fab fa-facebook-square"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="far fa-comment-alt"></i>
+      </header>
     <main>
-       <h1>Explore</h1> 
+        <div class="background-image">
+            <h1>Explore</h1> 
+        </div>
        <h2>Our Exhibitions</h2>
        <p>
         We believe science should not be confined to the textbook, but brought to live through exhibits. 
@@ -46,7 +54,7 @@
         Click on the subject you want, 
         or scroll through and pretend you are going throgh the museum!
        </p>
-       <ul>
+       <ul aria-label="exhibitions">
            <li><a href="#cosmology">Cosmology</a></li>
            <li><a href="#evolution">Evolution</a></li>
            <li><a href="#biology">Biology/Medicine</a></li>
@@ -60,8 +68,8 @@
                 Follow the journey of our solar exploration: from early Arab traders, 
                 to Galileo’s telescope, to the latest exploration of the planets in our solar system.    
             </p>
-           <img src="images/" alt="image of an astronaut sitting in the a chair for the spaceship"> 
-           <img src="images/" alt="image of an old gold-coloured telescope pointing upwards to the sky">
+           <img src="images/astronaut.jpg" alt="image of an astronaut sitting in a simulator"> 
+           <img src="images/telescope.jpg" alt="image of an old gold coloured telescope pointing up to the sky">
             <p>
                 Learn about the early navigators who used the stars to travel by.
             </p>
@@ -83,27 +91,100 @@
                 Since Darwin proposed his theory of evolution we have had a 
                 framework for exploring and understanding our place in this world.
             </p>
-                <img src="images/" alt="image of the skeleton of a small monkey, sitting on a branch">
+                <img src="images/monkey-skeleton.jpg" alt="image of the skeleton of a small monkey, sitting on a branch">
             <p>
                 Discover how the species we know today have evolved our time.
             </p>
-            <img src="images/" alt="image of the skeleton of a mammoth standing in the museum">
+            <img src="images/mammoth-skeleton.jpg" alt="the skeloton of a big mammoth, standing in a museum hall">
             <p>
                 Take some time to meet a few of the creatures who didn’t survive, including our 
                 "Woolly Mammoth", the Dodos, and a number of dinosaurs too.
             </p>
         </section>
+        <section>
+            <h3>Biology and Medicine</h3>
+            <h4>Explore the history of medicine</h4>
+            <p>
+                For many people their life expectancy is much longer and their quality of life
+                much improved, thanks to the growth of our understanding of medicine.   
+            </p>
+            <img src="images/x-ray.jpg" alt="x-ray of a hand forming a circle with the thumb and index finger">
+            <p>
+                From micro-organisms to the human body, 
+                major breakthroughs in biology are offering us unique insights 
+                into the great wonders of the tiny world. 
+            </p>
+            <img src="images/heart.jpg" alt="image of a plastic heart with the colours red, white, blue and yellow">
+            <p>
+                Over a series of exhibits we explore the history of medicine and take a 
+                look at some major breakthroughs including the discovery of penicillin 
+                and the first heart transplant. 
+            </p>
+            <p>
+                Many of our great medicinal discoveries have come not only from the lab, 
+                but also from observing animals in the wild. Often our fellow creatures 
+                have beat us to it.
+            </p>
+            <img src="images/">
+        </section>
+        <section>
+            <h3>Ecology</h3>
+            <h4>Explore how to create a sustainable future</h4>
+            <p>
+                As we learn more and more of the impact humans are having on the planet, 
+                the more important it becomes that scientists explore how to create a 
+                sustainable future   
+            </p>
+            <img src="images/windmills.jpg" alt="several big white windmills standing on a big green field in sunset">
+            <img src="images/nemo.jpg" alt="a small fish looking like Nemo swimming next to a pink underwater-plant">
+            <p>
+                Not just for humans but for the whole planet.
+            </p>
+            <p>
+                In our ecology section of the museum, we unpack 
+                the dangers we currently face... 
+            </p>
+            <img src="images/pollution.jpg" alt="tall fabric pipes coughing out a lot of smoke">
+            <img src="images/trash.jpg" alt="a big pile of trash out lying close to the ocean">
+            <p>
+                ...including global warming, extinction of species, and pollution.
+            </p>
+            <p>
+                But we also focus on the positive ways 
+                we can all contribute to a brighter future.
+            </p>
+        </section>
+        <section>
+            <h3>Robotics and AI</h3>
+            <h4>The information revolution is here...</h4>
+            <p>
+                …and robotics and artificial intelligence are the science of the future. 
+            </p>
+            <img src="images/realistic-robot.jpg" alt="robot withg a realistic human face">
+            <img src="images/students.jpg" alt="two students, a woman and a man, testing new technology">
+            <p>
+                From useful home applications of AI to industrial
+                uses of robotics, the future is here.
+            </p>
+            <p>
+                You can even say hello and shake the hand of Rob the Robot. 
+            </p>
+            <img src="images/robot-waving.jpg" alt="a white robot waving">
+        </section>
+        <div class="CTA">
+            <a href="explore.html" type="button">To the top</a>
+        </div>
     </main>
   </body>
   <footer>
-      <h3>Sign up for our newsletter</h3>
+      <h5>Sign up for our newsletter</h5>
       <i class="fab fa-facebook-square"></i>
       <i class="fab fa-instagram"></i>
       <i class="far fa-comment-alt"></i>
-      <ul>
+      <ul aria-label="">
         <li><a href="about.html">About us</a></li>
         <li><a href="visit.html">Adress/location</a></li>
-        <li><a href="contact.html"></a>Contact</li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
      &copy;Endre Makra-Stenkløv
   </footer>
