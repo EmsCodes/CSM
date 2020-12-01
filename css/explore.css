@@ -1,31 +1,89 @@
-/*Mobile*/
+/*MOBILE*/
+/*text styling*/
 h1 {
     font-size:1.8em;
     text-align:center;
     font-weight:500;
     color:var(--white-text-color);
+    position:absolute;
+    margin-left:40%;
+    margin-top:50px;
 }
 h2 {
-    font-size:1.4em;
-    text-align:center;
-    font-weight:100;
-    margin-top:20px;
-    margin-bottom:75px;
+    font-size:1.5em;
+    margin-top:30px;
+    opacity:75%;
+    margin-bottom:30px;
 }
-h3, h4 {
+h4 {
     font-size:1.3em;
+    font-weight:100;
     text-align:center;
-    font-weight:500;
+    color:var(--white-text-color);
+    width:65%;
+    margin:0px auto;
+    margin-top:60px;
 }
 h5 {
     color:#000;
     font-weight:bold;
 }
+.section-1 {
+    max-width:75%;
+    margin:0px auto;
+}
+.center-aligned-text{
+    text-align:center;
+    font-weight:600;
+    font-style:italic;
+    opacity:75%;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.italic-text{
+    font-style:italic;
+    max-width:75%;
+    margin:0px auto;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+/*blue exhibitions/h3 header*/
+h3 {
+    font-size:1.4em;
+    text-align:left;
+    color:var(--white-text-color);
+    background-color:var(--blue-color);
+    max-width:150px;
+    padding:10px 0px 10px 20px;
+    margin-top:75px;
+}
+/*images/illustrations/background*/
+.white-blur {
+    color:var(--white-text-color);
+    background-color:var(--background-text-blur);
+   
+}
 .background-image {
     background-image:url(/images/explore.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+    background-position: center;
     width:100%;
-    min-height:300px;
-    
+    min-height:250px;
 }
+.background-image-2 {
+    background-image:url(/images/cosmology.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    width:100%;
+    min-height:250px;
+}
+.illustration{
+    max-width:75%;
+    margin-left:15%;    
+}
+
+
+
+
