@@ -17,12 +17,13 @@ h2 {
 }
 h4 {
     font-size:1.3em;
+    background-color:var(--background-text-blur);
     font-weight:100;
     text-align:center;
     color:var(--white-text-color);
     width:65%;
     margin:0px auto;
-    margin-top:60px;
+    margin-top:50px;
 }
 h5 {
     color:#000;
@@ -57,27 +58,59 @@ h3 {
     padding:10px 0px 10px 20px;
     margin-top:75px;
 }
-/*images/illustrations/background*/
-.white-blur {
+/*images/illustrations/background/text over images*/
+.white-blur-fullscreen-text {
     color:var(--white-text-color);
     background-color:var(--background-text-blur);
-   
+    padding:10px;
+    width:75%;
+    position:absolute;
+    margin:80px 0px 0px 40px;
+}
+.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
+.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    width:100%;
+    min-height:250px;
 }
 .background-image {
     background-image:url(/images/explore.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-    width:100%;
-    min-height:250px;
 }
 .background-image-2 {
     background-image:url(/images/cosmology.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center;
-    width:100%;
-    min-height:250px;
+}
+.background-image-3 {
+    background-image:url(/images/galaxy.jpg);
+}
+.background-image-4 {
+    background-image:url(/images/monkey-evolution.jpg);
+}
+.background-image-5 {
+    background-image:url(/images/evolution.jpg);
+}
+.background-image-6 {
+    background-image:url(/images/natural-selection1.jpg);
+    background-position:left;
+}
+.background-image-7 {
+    background-image:url(/images/human-skeleton.jpg);
+    overflow:hidden;
+}
+.background-image-8 {
+    background-image:url(/images/lab.jpg);
+}
+.background-image-9 {
+    background-image:url(/images/ecology.jpg);
+    overflow:hidden;
+}
+.background-image-10 {
+    background-image:url(/images/solar-panel.jpg);
+}
+.background-image-11 {
+    background-image:url(/images/vr-girl.jpg);
+    overflow:hidden;
 }
 .illustration{
     max-width:75%;

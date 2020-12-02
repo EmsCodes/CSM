@@ -5,7 +5,7 @@
 --white-text-color:#fff;
 --blue-color:#0342A6;
 --purple-color:#5B2ADE;
---background-text-blur:rgba(0, 0, 0, 0.2);
+--background-text-blur:rgba(0, 0, 0, 0.4);
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 }
@@ -70,19 +70,21 @@ a {
 }
 /*half-screen images for "explore" and "visit"*/
 .images {
-    max-width:50%;
+    min-width:50%;
     height:300px;
     object-fit:cover;
 }
 .flex {
     display:flex;
     flex-direction:row;
+    justify-items:space-evenly;
 }
 /*for "explore" and "visit" category half-screen text*/
 .category-text {
-}
-.text-width {
-    width:50%;
+    max-width:65%;
+    margin:0px auto;
+    padding-top:65px;
+
 }
 /*icons/LOGO*/
 .logo {
@@ -94,6 +96,17 @@ a {
 
 .fab, .far {
     display:none;
+}
+/*cta*/
+.cta {
+    background-color:var(--blue-color);
+    font-size:1em;
+    padding:5px 5px;
+    margin:0px auto;
+    text-align:center;
+    width:125px;
+    margin-top:50px;
+    
 }
 /*secondary navigation "explore" and "visit"*/
 .navigation {
