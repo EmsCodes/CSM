@@ -11,12 +11,16 @@
 }
 
 /*hamburger menu*/
-
-ul li {
-    margin-top:25px;
+header nav li a {
+    color:#000;
+    text-decoration:none;
+}
+nav li {
+    margin-top:20px;
+}
+nav ul {
     list-style-type:none;
 }
-
 nav {
     display:none;
     background-color:#fff;
@@ -24,9 +28,10 @@ nav {
     font-weight:500;
     position:absolute;
     right:0;
-    margin-top:25px;
+    padding-top:20px;
     padding-right:75px;
     padding-left:20px;
+    z-index:1;
 }
 
 #hamburger-menu {
@@ -41,17 +46,18 @@ nav {
 }
 .fas {
     font-size:1.4em;
-    margin-right:30px;
+    margin-right:35px;
 }
 .inactive{
     opacity:50%;
 }
 /* Mobile first */
-
 h1, h2, h3,h4, h5{
     font-family: Georgia, serif;
 }
-
+li { 
+   text-decoration:none; 
+}
 body {
     font-family:arial, Tahoma, sans-serif;
     margin:0px;
@@ -62,11 +68,17 @@ header {
     justify-content: space-between;
     background-color:#fff;
     width:100%;
-    
+}
+p{
+    font-size:1em;
 }
 a {
+    color:#fff;
     text-decoration:none;
-    color:white;
+}
+/*contact link*/
+.contact {
+    color:var(--blue-color);
 }
 /*half-screen images for "explore" and "visit"*/
 .images {
@@ -83,8 +95,7 @@ a {
 .category-text {
     max-width:65%;
     margin:0px auto;
-    padding-top:65px;
-
+    padding-top:40px
 }
 /*icons/LOGO*/
 .logo {
@@ -99,27 +110,99 @@ a {
 }
 /*cta*/
 .cta {
-    background-color:var(--blue-color);
+    background:var(--purple-color-gradient);
     font-size:1em;
-    padding:5px 5px;
     margin:0px auto;
     text-align:center;
     width:125px;
     margin-top:50px;
-    
+    padding:3px 3px;
 }
+
 /*secondary navigation "explore" and "visit"*/
 .navigation {
-    background-color:var(--blue-color);
+    background:var(--blue-color-gradient);
     font-size:1em;
     padding:15px 10px;
     display:inline-block;
-    margin-bottom:5px;
+    margin-bottom:20px;
     margin-right:10px;
     align-items:center;
 }
 .exhibitions {
    margin:0px auto;
+}
+/*images/illustrations/background/text over images*/
+.white-blur-fullscreen-text {
+    color:var(--white-text-color);
+    background-color:var(--background-text-blur);
+    padding:10px;
+    width:75%;
+    position:absolute;
+    margin:80px 0px 0px 40px;
+}
+.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
+.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
+,.background-image-12, .background-image-13 {
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    min-height:250px;
+}
+.background-image {
+    background-image:url(/images/explore.jpg);
+    min-height:200px;
+}
+.background-image-2 {
+    background-image:url(/images/cosmology.jpg);
+}
+.background-image-3 {
+    background-image:url(/images/galaxy.jpg);
+}
+.background-image-4 {
+    background-image:url(/images/monkey-evolution.jpg);
+    overflow:hidden;
+    background-position:center -85px;
+}
+.background-image-5 {
+    background-image:url(/images/evolution.jpg);
+}
+.background-image-6 {
+    background-image:url(/images/natural-selection1.jpg);
+    background-position:left;
+}
+.background-image-7 {
+    background-image:url(/images/human-skeleton.jpg);
+    overflow:hidden;
+}
+.background-image-8 {
+    background-image:url(/images/lab.jpg);
+}
+.background-image-9 {
+    background-image:url(/images/ecology.jpg);
+    overflow:hidden;
+    background-position: center;
+}
+.background-image-10 {
+    background-image:url(/images/solar-panel.jpg);
+}
+.background-image-11 {
+    background-image:url(/images/vr-girl.jpg);
+    overflow:hidden;
+    background-position: center;
+}
+.background-image-12 {
+    background-image:url(/images/Night-at-museum.jpg);
+    background-position: center;
+}
+.background-image-13 {
+    background-image:url(/images/moon.jpg);
+    background-position: bottom;
+    overflow:hidden;
+}
+.illustration{
+    max-width:75%;
+    margin-left:15%;    
 }
 footer {
     text-align:center;

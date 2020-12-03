@@ -6,44 +6,52 @@
       name="description"
       content="How to visit us, and some of the fun you can expect"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/visit.css" rel="stylesheet"/>
     <script
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous">
     </script>
   </head>
   <body>
+    <!--Header-->
     <header>
         <a href="index.html">
-            <img src="images/logo.png" alt="Community Science Museums logo">
+            <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
         </a>
-       <nav>
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="index.html">Explore</a></li>
-           <li><a href="index.html">Visit</a></li>
-           <li><a href="index.html">About</a></li>
-           <li><a href="index.html">Contact</a></li>
-         </ul>
-       </nav>
-      <label for="hamburger-menu" class="hamburger">
-         <i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
-       <i class="fab fa-facebook-square"></i>
-       <i class="fab fa-instagram"></i>
-       <i class="far fa-comment-alt"></i>
-    </header>
+        <div class="drop-down">
+        <label for="hamburger-menu">
+          <i class="fas fa-bars"></i>
+       </label>
+       <input type="checkbox" id="hamburger-menu"/>
+         <nav> 
+           <ul>
+             <li><a href="index.html" class="inactive">Home</a></li>
+             <li><a href="explore.html"class="inactive">Explore</a></li>
+             <li><a href="visit.html>">Visit</a></li>
+             <li><a href="about.html"class="inactive">About</a></li>
+             <li><a href="contact.html"class="inactive">Contact</a></li>
+           </ul>
+         </nav>
+        </div>
+         <i class="fab fa-facebook-square"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="far fa-comment-alt"></i>
+      </header>
     <main>
-       <h1>Visit the museum</h1> 
+       <img src="images/museum.jpg">
+       <h1>Visit the museum</h1>
        <ul aria-label="visit page sections">
-           <li><a href="#kids">For kids</a></li>
-           <li><a href="#families">Families</a></li>
-           <li><a href="#news">News</a></li>
-           <li><a href="#robotics">Teachers</a></li>
+           <li class="navigation"><a href="#kids">For kids</a></li>
+           <li class="navigation"><a href="#families">Families</a></li>
+           <li class="navigation"><a href="#news">News</a></li>
+           <li class="navigation"><a href="#robotics">Teachers</a></li>
        </ul>
+       <!--Visit/opening-hours/admission-->
+       <section class="section">
        <h2>Location</h2>
        <p>
-            The museum is located at ----
+            The museum is located at 
        </p>
        <h2>Admission</h2>
        <p>
@@ -55,126 +63,191 @@
        </p>
        <p>
             If you would like to organise a guided tour for your group of 
-            6 or more people, please contact us to arrange the tour.
+            6 or more people, please <a class="contact" href="contact.html">contact</a> us to arrange the tour.
        </p>
        <h2>Opening hours</h2>
-           <p>Monday Closed</p>
-           <p>Tuesday 10:00-16:00</p>
-           <p>Wednesday 10:00-16:00</p>
-           <p>Thursday 10:00-16:00</p>
-           <p>Friday 10:00-19:00</p>
-           <p>Saturday 09:00-16:00</p>
-           <p>Sunday 09:00-13:00</p>
-        <p><i class="fas fa-wheelchair"></i>
-            The museum has wheelchair accessibility ramps. 
-            It also has audio guides and braille display signs for the visually impaired.
-        </p>
-        <p><i class="fas fa-mug-hot"></i>
-            There is a café attached to the museum where you can get light lunches,
-            soft drinks, coffee, snacks and more.
-        </p>
-        <p><i class="fas fa-store"></i>
-            Our shop offers a range of memorabilia from the museum as well as 
-            great gifts and activity packs.
-        </p>
-        <img src="images/Logo.png">
+        <div class="open">
+           <p><span class="bold-text">Monday:</span><span class="opening-hours"> Closed</span></p>
+           <p><span class="bold-text">Tuesday:</span><span class="opening-hours"> 10:00-16:00</span></p>
+           <p><span class="bold-text">Wednesday:</span><span class="opening-hours"> 10:00-16:00</span></p>
+           <p><span class="bold-text">Thursday:</span><span class="opening-hours">10:00-16:00</span></p>
+           <p><span class="bold-text">Friday:</span><span class="opening-hours">10:00-19:00</span></p>
+           <p><span class="bold-text">Saturday:</span><span class="opening-hours">09:00-16:00</span></p>
+           <p><span class="bold-text">Sunday:</span><span class="opening-hours">09:00-13:00</span></p>
+        </div>
+        <div class="flex">
+            <span class=""><i class="fas fa-wheelchair"></i></span>
+            <p>
+                The museum has wheelchair accessibility ramps. 
+                It also has audio guides and braille display signs for the visually impaired.
+            </p>
+        </div>
+        <div class="flex">
+            <i class="fas fa-mug-hot"></i>
+            <p>
+                There is a café attached to the museum where you can get light lunches,
+                soft drinks, coffee, snacks and more.
+            </p>
+        </div>
+        <div class="flex">
+            <i class="fas fa-store"></i>
+            <p>
+                Our shop offers a range of memorabilia from the museum as well as 
+                great gifts and activity packs.
+            </p>
+        </div>
+        </section>
+        <!--For Kids-->
         <section>
             <h3>For Kids</h3>
-            <p>
-                Are you a young person looking to learn more about science? 
-                Come on down to our museum, there’s plenty to see and do! 
-            </p>
-            <img src="images/mammoth-skeleton.jpg" alt="the skeloton of a big mammoth, standing in a museum hall">
-            <p>
-                You can learn about Newtonian physics from our bumper swing, 
-                or why not travel back in time and meet our resident "Woolly Mammoth"? 
-            </p>
-            <p>
-                Our exhibits are designed to be accessible for interested minds, 
-                so make sure you come ready to learn and explore.
-            </p>
-            <img src="images/vr-glasses.jpg" alt="red coloured image of a girl looking up with VR-glasses on">
-            <p>
-                We also have the Young Stars club which meets 
-                once a week on Saturday between 10:00 and 13:00 where you’ll get 
-                to explore and experiment with our team of experts.
-            </p>
+            <div class="section-2">
+                <p>
+                    Are you a young person looking to learn more about science? 
+                    Come on down to our museum, there’s plenty to see and do! 
+                </p>
+            </div>
+            <div class="flex">
+                <img class="images" src="images/mammoth-skeleton.jpg" alt="the skeleton of a big mammoth, standing in a museum hall">
+                <div class="blue-background">
+                    <p class="text-width">
+                        You can learn about Newtonian physics from our bumper swing, 
+                        or why not travel back in time and meet our resident "Woolly Mammoth"? 
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="purple-background">
+                    <p class="text-width">
+                    Our exhibits are designed to be accessible for interested minds, 
+                    so make sure you come ready to learn and explore.
+                    </p>
+                </div>
+                <img class="images" src="images/vr-glasses.jpg" alt="red coloured image of a girl looking up with VR-glasses on">
+            </div>
+            <div class="section-2">
+                <p>
+                    We also have the Young Stars club which meets 
+                    once a week on Saturday between 10:00 and 13:00 where you’ll get 
+                    to explore and experiment with our team of experts.
+                </p>
+            </div>
         </section>
+        <!--Families-->
         <section>
             <h3>Families</h3>
-            <p>
-                Come join us at the Community Science Museum where we’re 
-                committed to making science accessible to all.
-                Entrance is free for all!
-            </p>
-            <img src="images/kid-in-museum.jpg" alt="young boy gazing out over a room in the museum, facing away from ">
-            <p>
-                During the school holidays we run special holiday 
-                clubs where you can join other children your age to go on a journey of discovery. 
-            </p>
-            <p>
-                Each holiday we pick a new theme to explore. 
-            </p>
-            <p>
-                To find out more about the holiday club and how you can join...
-            </p>
-            <p>
-                <a href="visit.html" class="link"> ...send us a message
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-            </p>
+            <div class="section-2">
+                <p>
+                    Come join us at the Community Science Museum where we’re 
+                    committed to making science accessible to all.
+                    Entrance is free for all!
+                </p>
+            </div>
+            <div class="flex">
+            <img class="images" src="images/kid-in-museum.jpg" alt="young boy gazing out over a room in the museum, facing away from ">
+                <div class="blue-background">
+                    <p class="text-width">
+                        During the school holidays we run special holiday 
+                        clubs where you can join other children your age to go on a journey of discovery. 
+                    </p>
+                </div>    
+            </div>
+            <div class="flex">
+                <div class="purple-background">
+                    <p class="text-width">
+                        Each holiday we pick a new theme to explore. 
+                        To find out more about the holiday club and how you can join...
+                    </p> 
+                </div>
+                <img class="images" src="images/skeleton-claw.jpg" alt="young boy gazing out over a room in the museum, facing away from ">
+            </div>
+            <div class="cta">  
+                <p>
+                    <a href="visit.html" type="button"> Contact us</a>
+                </p>
+            </div>    
         </section>
+        <!--Teachers-->
         <section>
             <h3>Teachers</h3>
-            <img src="images/robot-hand.jpg" alt="blue coloured image with a robot-looking hand reaching up towards the ceiling">
-            <p>
-                As a community-driven museum, we want to work with schools to 
-                create places of learning and exploring.
-            </p>
-            <p>
-                Our team are on hand to give your students 
-                guided tours of the museum and teach them in our learning Laboratory.
-            </p>
-            <img src="images/VR-painting.jpg" alt="boy painting with VR-glasses on">
+            <div class="flex">
+                <img class="images" src="images/robot-hand.jpg" alt="blue coloured image with a robot-looking hand reaching up towards the ceiling">
+                <div class="blue-background">
+                    <p class="text-width">
+                        As a community-driven museum, we want to work with schools to 
+                        create places of learning and exploring.
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="purple-background">
+                    <p class="text-width">
+                    Our team are on hand to give your students 
+                    guided tours of the museum and teach them in our learning Laboratory.
+                    </p>
+                </div>       
+                <img class="images" src="images/VR-painting.jpg" alt="boy painting with VR-glasses on">
+            </div>
             <p>
                 To find out more, send us a message!
             </p>
-            <p>
-                <a href="visit.html" class="link"> ...send message
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-            </p>
+            <div class="cta">
+                <p>
+                    <a href="visit.html" class="link"> Send message
+                    </a>
+                </p>
+            </div>
         </section>
+        <!--News-->
         <section>
-            <h3>News/Events</h3>
-            <h4 id="news">Night at the museum!</h4>
-            <p>
-                Get your family together for an exciting
-                night in the museum as you sleep over beside 
-                dinosaurs and science displays
-            </p>
-            <img src="images/mammoth-skeleton.jpg" alt="the skeloton of a big mammoth, standing in a museum hall">
-            <img src="images/scary-skeleton.jpg" alt="closeup of a skeleton of a dangerous/scary dinosaur">
-            <p>
-                Bring your own sleeping bag and get ready to rough it as we 
-                go exploring the wonders of science.
-            </p>
-            <h4>Visitng professor of Aeronautics</h4>
-            <p>
-                It is our pleasure to announce that Prof Sheila Widnall 
-                from the Massachusetts Institute of Technology will 
-                be delivering 3 lectures.
-            </p>
-            <img src="images/professor.jpg" alt="professor Sheila Widnall with a black and red squared shirt, glasses, and black hair with green colour on the tips">
-            <img src="images/space-science.jpg" alt="female scientist in lab coat working on space equipment">
-            <p>
-                She will talk about the development 
-                of aeronautics and where the future lies in this exciting ‘space’.
-            </p>
+            <div class="background-image-12">
+                <h3>News</h3>
+                <h4 id="news">Night at the museum!</h4>
+            </div>
+            <div class="flex">
+                <img class="images" src="images/idea.jpg" alt="the skeloton of a big mammoth, standing in a museum hall">
+                <div class="blue-background">
+                    <p class="text-width">
+                        Get your family together for an exciting
+                        night in the museum as you sleep over beside 
+                        dinosaurs and science displays
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="purple-background">
+                    <p class="text-width">
+                        Bring your own sleeping bag and get ready to rough it as we 
+                        go exploring the wonders of science.
+                    </p>
+                </div>
+            <img class="images" src="images/scary-skeleton.jpg" alt="closeup of a skeleton of a dangerous/scary dinosaur">
+            </div>
+            <div class="background-image-13">
+                <h4>Visiting professor of Aeronautics</h4> 
+            </div>
+            <div class="flex">
+                <img class="images" src="images/professor.jpg" alt="professor Sheila Widnall with a black and red squared shirt, glasses, and black hair with green colour on the tips">
+                <div class="blue-background">
+                    <p class="text-width">
+                        It is our pleasure to announce that Prof Sheila Widnall 
+                        from the Massachusetts Institute of Technology will 
+                        be delivering 3 lectures.
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="purple-background">
+                    <p class="text-width">
+                        She will talk about the development 
+                        of aeronautics and where the future lies in this exciting ‘space’.
+                    </p>
+                </p>
+            </div>    
+            <img class="images" src="images/space-science.jpg" alt="female scientist in lab coat working on space equipment">
         </section>
-        <div class="CTA">
+        <div class="cta">
             <a href="visit.html" type="button">To the top</a>
-          </div>
+        </div>
     </main>
   </body>
   <footer>
