@@ -29,6 +29,7 @@ h4 {
 h5 {
     color:#000;
     font-weight:bold;
+    margin-top:0px;
 }
 img {
     min-width:100%;
@@ -37,6 +38,16 @@ img {
 }
 a {
     font-size:1em;
+}
+/*blue exhibitions/h3 header*/
+h3 {
+    font-size:1.4em;
+    text-align:left;
+    color:var(--white-text-color);
+    background:var(--blue-color-gradient);
+    max-width:150px;
+    padding:10px 0px 10px 20px;
+    margin-bottom:0px;
 }
 /*opening hours/visit/admission*/
 .section {
@@ -48,10 +59,9 @@ a {
 }
 .bold-text {
     font-weight:700;
-    margin-right:50px;
 }
 .opening-hours {
-    text-align:;
+    margin-left:25px;
 }
 .fas {
     color:var(--blue-color);
@@ -75,17 +85,5 @@ a {
     max-width:75%;
     margin:0px auto;
 }
-/*blue exhibitions/h3 header*/
-h3 {
-    font-size:1.4em;
-    text-align:left;
-    color:var(--white-text-color);
-    background:var(--blue-color-gradient);
-    max-width:150px;
-    padding:10px 0px 10px 20px;
-    margin-top:60px;
-    margin-bottom:0px;
-}
-/* 
 footer {
 }

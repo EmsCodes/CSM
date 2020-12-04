@@ -56,7 +56,7 @@ h3 {
     font-size:1.4em;
     text-align:left;
     color:var(--white-text-color);
-    background-color:var(--blue-color);
+    background:var(--blue-color-gradient);
     max-width:150px;
     padding:10px 0px 10px 20px;
     margin:0px;
