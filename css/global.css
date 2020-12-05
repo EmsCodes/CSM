@@ -127,13 +127,12 @@ a {
 
 /*secondary navigation "explore" and "visit"*/
 .navigation {
+    display:inline-block;
     background:var(--blue-color-gradient);
     font-size:1em;
     padding:15px 10px;
-    display:inline-block;
     margin-bottom:20px;
     margin-right:10px;
-    align-items:center;
 }
 .exhibitions {
    margin:0px auto;

@@ -1,6 +1,6 @@
 main {
     background-image:url(/images/Mainpicture.jpg);
-    height:100vw;
+    height:auto;
     background-repeat: no-repeat;
     background-size:cover;
     color:#fff;
@@ -8,6 +8,11 @@ main {
 h1 {
     font-size:1.6em;
     font-weight:500;
+    margin-top:75px;
+}
+h2 {
+    font-size:1em;
+    margin-top:50px;
 }
 fieldset {
     max-width:75%;
@@ -22,14 +27,18 @@ textarea {
 }
 .cta {
     padding:10px;
+    margin:
 }
-
 #name {
-    margin:15px;
+    margin:10px;
 }
 #email {
-    margin:15px;
+    margin:10px;
 }
 #message {
-    margin:15px;
+    margin:10px;
+    height:auto;
+}
+footer {
+    margin:
 }

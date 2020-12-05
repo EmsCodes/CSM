@@ -20,6 +20,9 @@ h3, h4 {
     text-align:center;
     font-weight:500;
 }
+h3 {
+    padding-top:15px;
+}
 h5 {
     color:#000;
     font-weight:bold;
@@ -44,10 +47,22 @@ a {
 }
 p {
     color:var(--white-text-color);
+    max-width:72%;
+    margin:0px auto;
+    padding-bottom:40px;
 }
 .link {
     color:var(--white-text-color);
-    font-style:italic;
+    background:var(--blue-color-gradient);
+    font-size:1em;
+    margin:0px auto;
+    width:125px;
+    padding:12px 12px;
+}
+/*background-color/blur*/
+.blur {
+    background-color:var(--background-text-blur);
+    margin-top:25px;
 }
 /*index CTA*/
 .CTA {
