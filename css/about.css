@@ -4,18 +4,14 @@ h1 {
     font-weight:500;
 }
 h2 {
-    font-size:1.3em;
+    font-size:1.6em;
     margin-top:20px;
-    font-weight:300;
-    margin-bottom:30px;
-    margin-top:50px;
+    font-weight:500;
 }
 h3 {
-    font-size:
-}
-h4 {
-    font-size:1.3em;
-    font-weight:100;
+    font-size:1.2em;
+    opacity:75%;
+    font-weight:300;
 }
 h5 {
     color:#000;
@@ -35,20 +31,4 @@ a {
 .max-width {
     max-width:75%;
     margin:0px auto;
-}
-/*background-color*/
-
-.blue-background {
-    color:#fff;
-    background:var(--blue-color-gradient);
-    padding:20px 50px;
-    border-radius:0px 0px 50px 0px;
-}
-.purple-background {
-    color:#fff;
-    background:var(--purple-color-gradient);
-    padding:20px 50px;
-    border-radius:0px 0px 50px 0px;
-    margin-bottom:50px;
-    margin-top:50px;
 }

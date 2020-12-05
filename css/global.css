@@ -108,6 +108,11 @@ a {
 .fab, .far {
     display:none;
 }
+.fas {
+    color:var(--blue-color);
+    font-size:1.6em;
+    margin-top:10px;
+}
 /*cta*/
 .cta {
     background:var(--purple-color-gradient);

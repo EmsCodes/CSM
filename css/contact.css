@@ -1,0 +1,35 @@
+main {
+    background-image:url(/images/Mainpicture.jpg);
+    height:100vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:#fff;
+}
+h1 {
+    font-size:1.6em;
+    font-weight:500;
+}
+fieldset {
+    max-width:75%;
+    text-align:left;
+    height:auto;
+    border:none;
+    margin:0px auto;
+}
+textarea {
+    margin-top:15px;
+    margin-bottom:45px;
+}
+.cta {
+    padding:10px;
+}
+
+#name {
+    margin:15px;
+}
+#email {
+    margin:15px;
+}
+#message {
+    margin:15px;
+}

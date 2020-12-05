@@ -63,11 +63,6 @@ h3 {
 .opening-hours {
     margin-left:25px;
 }
-.fas {
-    color:var(--blue-color);
-    font-size:1.6em;
-    margin-top:10px;
-}
 /* For kids/teachers/families */
 .blue-background {
     background:var(--blue-color-gradient);
