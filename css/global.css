@@ -304,10 +304,37 @@ footer a {
     .background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
     .background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
     ,.background-image-12, .background-image-13 {
-        height:350px;
+        height:400px;
     }
-        /*explore image*/
-        .background-image {
-            background-position:center top -45px;
-        }   
+ /*explore image*/
+.background-image {
+    background-position:center top -45px;
+}
+.background-image-2, .background-image-3, .background-image-5, .background-image-8 {
+    background-position:center;
+}   
+.white-blur-fullscreen-text {
+    margin:20% 25%;
+}
+
+/*NAV/icons/LOGO*/
+nav {
+    font-size:1.5em;
+    padding:40px 150px 40px 40px;
+}
+nav li {
+    margin-top:35px;
+    margin-left:20px;
+}
+.logo {
+    width:200px;
+    height:auto;
+    shape-rendering:crispEdges;
+    margin:10px 10px;
+}
+.fas {
+    font-size:2em;
+    margin-right:50px;
+    margin-top:20px;
+}
     }

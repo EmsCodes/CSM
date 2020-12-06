@@ -66,5 +66,36 @@ h3 {
 }
 
 
+/*Media Queries*/
+
+@media (min-width: 800px){
+    h1 {
+        font-size:3em;
+        margin-top:100px;
+        padding:15px 0px;
+    }
+    h2 {
+        font-size:2em;
+        margin-top:50px;
+        opacity:75%;
+        margin-bottom:30px;
+    }
+    h4 {
+        font-size:1.8em;
+        margin-top:100px;
+    }
+    .center-aligned-text{
+        font-size:1.3em;
+        margin-top:65px;
+        margin-bottom:65px;
+    }
+    /*blue exhibitions/h3 header*/
+    h3 {
+        font-size:1.8em;
+        max-width:175px;
+        padding:10px 15px 10px 20px;
+    }
+}
+
 
 
