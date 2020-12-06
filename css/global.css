@@ -10,7 +10,6 @@
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 }
 
-
 /*hamburger menu*/
 
 
@@ -65,7 +64,7 @@ li {
    text-decoration:none; 
 }
 body {
-    font-family:arial, Tahoma, sans-serif;
+    font-family:verdana, Tahoma, sans-serif;
     margin:0px;
 }
 header { 
@@ -156,7 +155,6 @@ a {
 
 /*secondary navigation "explore" and "visit"*/
 
-
 .navigation {
 
     display:inline-block;
@@ -168,8 +166,8 @@ a {
 }
 /*explore div for second nav*/
 .exhibitions {
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:16%;
+    margin-right:16%;
 }
 /*visit div for second nav*/
 
@@ -301,9 +299,13 @@ footer a {
 
 @media (min-width: 800px){
 
-    .background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
-    .background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
-    ,.background-image-12, .background-image-13 {
+p{
+    font-size:1.1em;
+}
+
+.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
+.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
+,.background-image-12, .background-image-13 {
         height:400px;
     }
  /*explore image*/
@@ -314,7 +316,7 @@ footer a {
     background-position:center;
 }   
 .white-blur-fullscreen-text {
-    margin:20% 25%;
+    margin:15% 20%;
 }
 
 /*NAV/icons/LOGO*/
@@ -327,9 +329,7 @@ nav li {
     margin-left:20px;
 }
 .logo {
-    width:200px;
-    height:auto;
-    shape-rendering:crispEdges;
+    width:175px;
     margin:10px 10px;
 }
 .fas {
@@ -338,3 +338,14 @@ nav li {
     margin-top:20px;
 }
     }
+
+@media (min-width: 1100px){
+
+    .white-blur-fullscreen-text {
+        margin:12% 15%;
+    }
+    /*explore div for second nav*/
+    .exhibitions {
+        margin:50px 22% 75px 22%;
+}
+}
