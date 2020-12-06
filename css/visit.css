@@ -66,9 +66,11 @@ h3 {
 /* For kids/teachers/families */
 .blue-background {
     background:var(--blue-color-gradient);
+    min-height:300px;
 }
 .purple-background {
     background:var(--purple-color-gradient);
+    min-height:300px;
 }
 .text-width {
     max-width:65%;

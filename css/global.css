@@ -5,12 +5,15 @@
 --white-text-color:#fff;
 --blue-color:#0342A6;
 --purple-color:#5B2ADE;
---background-text-blur:rgba(0, 0, 0, 0.4);
+--background-text-blur:rgba(0, 0, 0, 0.5);
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 }
 
+
 /*hamburger menu*/
+
+
 header nav li a {
     color:#000;
     text-decoration:none;
@@ -29,7 +32,7 @@ nav {
     position:absolute;
     right:0;
     padding-top:20px;
-    padding-right:75px;
+    padding-right:100px;
     padding-left:20px;
     z-index:1;
 }
@@ -51,7 +54,10 @@ nav {
 .inactive{
     opacity:50%;
 }
+
 /* Mobile first */
+
+
 h1, h2, h3,h4, h5{
     font-family: Georgia, serif;
 }
@@ -76,11 +82,19 @@ a {
     color:#fff;
     text-decoration:none;
 }
+
+
 /*contact link*/
+
+
 .contact {
     color:var(--blue-color);
 }
+
+
 /*half-screen images for "explore" and "visit"*/
+
+
 .images {
     min-width:50%;
     height:300px;
@@ -89,15 +103,24 @@ a {
 .flex {
     display:flex;
     flex-direction:row;
-    justify-items:space-evenly;
+    justify-content:center;
+    align-items:center;
 }
+
+
 /*for "explore" and "visit" category half-screen text*/
+
 .category-text {
-    max-width:65%;
     margin:0px auto;
-    padding-top:40px
+    max-width:65%;
 }
+.text-width {
+    min-width:50%;
+}
+
 /*icons/LOGO*/
+
+
 .logo {
     width:120px;
     height:auto;
@@ -113,7 +136,11 @@ a {
     font-size:1.6em;
     margin-top:10px;
 }
+
+
 /*cta*/
+
+
 .cta {
     background:var(--purple-color-gradient);
     font-size:1em;
@@ -125,8 +152,13 @@ a {
     margin-bottom:50px;
 }
 
+
+
 /*secondary navigation "explore" and "visit"*/
+
+
 .navigation {
+
     display:inline-block;
     background:var(--blue-color-gradient);
     font-size:1em;
@@ -134,29 +166,37 @@ a {
     margin-bottom:20px;
     margin-right:10px;
 }
+/*explore div for second nav*/
 .exhibitions {
-   margin:0px auto;
+    margin-left:15%;
+    margin-right:15%;
 }
+/*visit div for second nav*/
+
+
 /*images/illustrations/background/text over images*/
+
 .white-blur-fullscreen-text {
     color:var(--white-text-color);
     background-color:var(--background-text-blur);
-    padding:10px;
-    width:75%;
+    padding:20px;
+    max-width:75%;
     position:absolute;
-    margin:80px 0px 0px 40px;
+    margin:10% 25%;
+    border-radius:25px 0px 25px 0px;
 }
 .background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
 .background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
 ,.background-image-12, .background-image-13 {
     background-repeat:no-repeat;
     background-size:cover;
-    width:100%;
-    min-height:250px;
+    max-width:100%;
+    height:250px;
 }
 .background-image {
-    background-image:url(/images/explore.jpg);
-    min-height:200px;
+    background-image:url(/images/explore-museum.jpg);
+    height:200px;
+    background-position:bottom 40px;
 }
 .background-image-2 {
     background-image:url(/images/cosmology.jpg);
@@ -167,7 +207,7 @@ a {
 .background-image-4 {
     background-image:url(/images/monkey-evolution.jpg);
     overflow:hidden;
-    background-position:center -85px;
+    background-position:25% 25%;
 }
 .background-image-5 {
     background-image:url(/images/evolution.jpg);
@@ -190,6 +230,7 @@ a {
 }
 .background-image-10 {
     background-image:url(/images/solar-panel.jpg);
+    background-position:bottom;
 }
 .background-image-11 {
     background-image:url(/images/vr-girl.jpg);
@@ -206,10 +247,14 @@ a {
     overflow:hidden;
 }
 .illustration{
+    display:block;
+    margin:0px auto;
     max-width:75%;
-    margin-left:15%;    
 }
+
+
 /*footer*/
+
 
 footer {
     text-align:center;
@@ -222,3 +267,47 @@ footer ul {
 footer a {
     color:#000;
 }
+
+
+/*Media Queries*/
+
+@media (min-width: 600px){
+
+.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
+.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
+,.background-image-12, .background-image-13 {
+    height:300px;
+}
+    /*explore image*/
+    .background-image {
+        background-position:center top -45px;
+    }   
+    /*monkey image*/
+    .background-image-4 {
+        background-position:25% 25%;
+    }
+    #monkey {
+        object-position:25% 25%;
+    }
+    /* Flex images/half screen*/
+    .images {
+        height:350px;
+        max-width:50%;
+    }
+    #monkey {
+        object-position:25% 25%;
+    }
+}
+
+@media (min-width: 800px){
+
+    .background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
+    .background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
+    ,.background-image-12, .background-image-13 {
+        height:350px;
+    }
+        /*explore image*/
+        .background-image {
+            background-position:center top -45px;
+        }   
+    }
