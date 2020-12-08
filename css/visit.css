@@ -3,7 +3,8 @@ h1 {
     font-size:1.8em;
     font-weight:500;
     text-transform:capitalize;
-    max-width:75%;
+    width:75%;
+    max-width:600px;
     margin:0px auto;
     margin-top:35px;
     margin-bottom:40px;
@@ -36,9 +37,7 @@ img {
     height:200px;
     object-fit:cover;
 }
-a {
-    font-size:1em;
-}
+
 /*blue exhibitions/h3 header*/
 h3 {
     font-size:1.4em;
@@ -51,7 +50,8 @@ h3 {
 }
 /*opening hours/visit/admission*/
 .section {
-    max-width:75%;
+    width:75%;
+    max-width:600px;
     margin:0px auto;
 }
 .open {
@@ -73,7 +73,7 @@ h3 {
     min-height:300px;
 }
 .text-width {
-    max-width:65%;
+    width:65%;
     margin:0px auto;
     margin-top:60px;
     color:#fff;
@@ -83,4 +83,18 @@ h3 {
     margin:0px auto;
 }
 footer {
+}
+
+
+@media (min-width:600px){
+    /* For kids/teachers/families */
+.blue-background {
+    min-height:350px;
+}
+.purple-background {
+    min-height:350px;
+}
+.text-width {
+    margin-top:125px;
+}
 }

@@ -183,18 +183,15 @@ a {
     margin:10% 25%;
     border-radius:25px 0px 25px 0px;
 }
-.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
-.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
-,.background-image-12, .background-image-13 {
-    background-repeat:no-repeat;
-    background-size:cover;
+.background-size {
     width:100%;
-    height:250px;
+    height:275px;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 .background-image {
     background-image:url(/images/explore-museum.jpg);
     height:200px;
-    background-position:bottom 40px;
 }
 .background-image-2 {
     background-image:url(/images/cosmology.jpg);
@@ -241,7 +238,6 @@ a {
 }
 .background-image-13 {
     background-image:url(/images/moon.jpg);
-    background-position: bottom;
     overflow:hidden;
 }
 .illustration{
@@ -256,7 +252,6 @@ a {
 
 footer {
     text-align:center;
-    margin-top:
 }
 footer ul {
     list-style-type:none;
@@ -271,9 +266,7 @@ footer a {
 
 @media (min-width: 600px){
 
-.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
-.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
-,.background-image-12, .background-image-13 {
+.background-size {
     height:300px;
 }
     /*explore image*/
@@ -301,16 +294,15 @@ footer a {
 
 p{
     font-size:1.1em;
+    font-weight:lighter;
 }
 
-.background-image, .background-image-2, .background-image-3, .background-image-4, .background-image-5,
-.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
-,.background-image-12, .background-image-13 {
+.background-size {
         height:400px;
     }
  /*explore image*/
 .background-image {
-    background-position:center top -45px;
+    background-position:bottom;
 }
 .background-image-2, .background-image-3, .background-image-5, .background-image-8 {
     background-position:center;
@@ -344,40 +336,25 @@ nav li {
     .white-blur-fullscreen-text {
         margin:12% 15%;
     }
-    /*explore div for second nav*/
     .exhibitions {
-        margin:50px 20% 75px 20%;
+        margin-left:20%;
+        margin-right:20%;
     }
 }
 
 @media (min-width: 1300px){
 
-/*Nav*/
+/*Nav/header*/
 
-nav li {
-    margin-top:20px;
-}
-nav {
-    display:show;
-    background-color:#fff;
-    font-size:1.1em;
-    font-weight:500;
-    padding-top:20px;
-    padding-right:0px;
-    padding-left:20px;
-}
-#hamburger-menu:checked ~ nav {
-    display:none;
-}
-.drop-down {
-    display:none;
+/*explore div for second nav*/
+.exhibitions {
+    margin-left:22%;
+    margin-right:22%;
 }
 
 /*Images*/
  
-.background-image-2, .background-image-3, .background-image-4, .background-image-5,
-.background-image-6, .background-image-7, .background-image-8, .background-image-9, .background-image-10, .background-image-11 
-,.background-image-12, .background-image-13 {
+.background-size {
         height:500px;
     }
  /*explore image*/
