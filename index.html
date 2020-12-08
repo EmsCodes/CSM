@@ -14,26 +14,30 @@
     </script>
   </head>
   <body>
-    <header>
-      <a href="index.html">
-          <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
-      </a>
-      <div class="drop-down">
-      <label for="hamburger-menu">
-        <i class="fas fa-bars"></i>
-     </label>
-     <input type="checkbox" id="hamburger-menu"/>
-       <nav> 
-         <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="explore.html"class="inactive">Explore</a></li>
-           <li><a href="visit.html"class="inactive">Visit</a></li>
-           <li><a href="about.html"class="inactive">About</a></li>
-           <li><a href="contact.html"class="inactive">Contact</a></li>
-         </ul>
-       </nav>
-      </div>
-    </header>
+      <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
+            </a>
+            <div class="drop-down">
+            <label for="hamburger-menu">
+              <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="hamburger-menu"/>
+            <nav> 
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html"class="inactive">Explore</a></li>
+                <li><a href="visit.html"class="inactive">Visit</a></li>
+                <li><a href="about.html"class="inactive">About</a></li>
+                <li><a href="contact.html"class="inactive">Contact</a></li>
+              </ul>
+            </nav>
+            </div>
+            <div class="social-icons">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+      </header>
     <main>
         <h1>Community Science Museum</h1>
         <h2>Explore Toghether</h2>
@@ -48,12 +52,13 @@
               Visit
             </div>
           </a>
-        </div>  
-        <section class="main">
-          <section class="blur">
+        </div>
           <h3>Latest news</h3>
+          <div class="flex-index">
+          <!--Night at museum-->
+          <section class="blur margin">
           <a href="#news">
-            <img src="images/Night-at-museum.jpg" class="images"
+            <img src="images/Night-at-museum.jpg" class="index-images"
             alt="a stuffed elephant standing i a large old looking museum hall"> 
           <h4>"Night at the museum"</h4>
             <p>
@@ -67,10 +72,10 @@
             </p>
           </a> 
           </section>
-          <section class="blur">
-          </a>
-          <a href="#robotics">
-            <img src="images/vr-glasses.jpg" class="images"
+          <!--Robotics and AI-->
+          <section class="blur margin">
+          <a href=#robotics>
+            <img src="images/vr-glasses.jpg" class="index-images"
                 alt="red coloured image of a girl looking up with VR-glasses on">
             <h4>Robotics and AI</h4>
             <p>
@@ -78,14 +83,15 @@
               and artificial intelligence are the science of the future.
             </p>
             <p>
-              <a href="visit.html" class="link"> Read more
+              <a href=#robotics class="link"> Read more
               </a>
             </p>
+          </a>
           </section>
-          <section class="blur">
-          <a>
+          <!--For teachers-->
+          <section class="blur margin">
           <a href="#teachers">
-            <img src="images/VR-painting.jpg" class="images" alt="boy painting with VR-glasses on">
+            <img src="images/VR-painting.jpg" class="index-images" alt="boy painting with VR-glasses on">
             <h4>For teachers</h4>
             <p>
               As a community-driven museum we want to work with schools 
@@ -95,9 +101,9 @@
               <a href="visit.html" class="link"> Read more
               </a>
             </p>
-          <a>
+          </a>
           </section>
-        </section>
+        </di>
     </main>
   </body>
   <footer>

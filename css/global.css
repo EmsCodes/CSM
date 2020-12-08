@@ -5,25 +5,25 @@
 --white-text-color:#fff;
 --blue-color:#0342A6;
 --purple-color:#5B2ADE;
---background-text-blur:rgba(0, 0, 0, 0.5);
+--background-text-blur:rgba(20, 20, 20, 0.7);
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 }
 
 /*hamburger menu*/
 
-
 header nav li a {
     color:#000;
-    text-decoration:none;
+    text-decoration:underline ;
 }
 nav li {
-    margin-top:20px;
+    margin-top:25px;
 }
 nav ul {
     list-style-type:none;
 }
 nav {
+    font-family:georgia, serif, verdana;
     display:none;
     background-color:#fff;
     font-size:1.1em;
@@ -52,6 +52,7 @@ nav {
 }
 .inactive{
     opacity:50%;
+    text-decoration:none;
 }
 
 /* Mobile first */
@@ -67,22 +68,25 @@ body {
     font-family:verdana, Tahoma, sans-serif;
     margin:0px;
 }
-header { 
+header {
+    position:fixed;
+    top:0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color:#fff;
     width:100%;
-}
-p{
-    font-size:1em;
+    z-index:1;
 }
 a {
     color:#fff;
     text-decoration:none;
 }
+/*adress*/
 
-
+.address {
+    font-weight:600;
+}
 /*contact link*/
 
 
@@ -133,9 +137,11 @@ a {
 .fas {
     color:var(--blue-color);
     font-size:1.6em;
-    margin-top:10px;
+    margin-top:5px;
 }
-
+.social-icons {
+    display:none;
+}
 
 /*cta*/
 
@@ -151,7 +157,16 @@ a {
     margin-bottom:50px;
 }
 
-
+.to-top {
+    background:var(--purple-color-gradient);
+    font-size:1.2em;
+    margin:0px auto;
+    text-align:center;
+    width:125px;
+    margin-top:50px;
+    padding:10px 10px;
+    margin-bottom:50px;
+}
 
 /*secondary navigation "explore" and "visit"*/
 
@@ -178,7 +193,8 @@ a {
     color:var(--white-text-color);
     background-color:var(--background-text-blur);
     padding:20px;
-    max-width:75%;
+    width:75%;
+    max-width:600px;
     position:absolute;
     margin:10% 25%;
     border-radius:25px 0px 25px 0px;
@@ -192,6 +208,7 @@ a {
 .background-image {
     background-image:url(/images/explore-museum.jpg);
     height:200px;
+    margin-top:70px;
 }
 .background-image-2 {
     background-image:url(/images/cosmology.jpg);
@@ -288,15 +305,32 @@ footer a {
     #monkey {
         object-position:25% 25%;
     }
+    
+/*NAV/icons/LOGO*/
+nav {
+    font-size:1.3em;
+    padding:40px 150px 40px 40px;
+}
+nav li {
+    margin-top:35px;
+    margin-left:20px;
+}
+.logo {
+    width:135px;
+    margin:10px 10px;
+}
+.fas {
+    font-size:2em;
+    margin-right:50px;
+    margin-top:10px;
+}
 }
 
 @media (min-width: 800px){
 
 p{
     font-size:1.1em;
-    font-weight:lighter;
 }
-
 .background-size {
         height:400px;
     }
@@ -340,12 +374,41 @@ nav li {
         margin-left:20%;
         margin-right:20%;
     }
+     /*explore image*/
+    .background-image {
+        background-position:center;
+}
 }
 
 @media (min-width: 1300px){
 
 /*Nav/header*/
-
+nav {
+    position:static;
+    display:block;
+    font-size:1.3em;
+    font-weight:500;
+    padding:0px;
+    z-index:1;
+    margin-left:120px;
+}
+nav li {
+    display:inline;
+    margin-right:75px;
+}
+.fas {
+    display:none;
+}
+header{
+    justify-content:start;
+}
+.logo {
+    margin-right:
+}
+/* Social Icons*/
+.social-icons {
+    visibility:visible;
+}
 /*explore div for second nav*/
 .exhibitions {
     margin-left:22%;
@@ -362,7 +425,7 @@ nav li {
     background-position:center;
 }
 .white-blur-fullscreen-text {
-    margin:15% 20%;
+    margin:15% 25%;
 }
 
 }
