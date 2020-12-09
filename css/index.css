@@ -81,6 +81,11 @@ p {
     border-radius:50%;
     padding:40px 25px;
     color:var(--white-text-color);
+    animation-name:rotate;
+    animation-duration:15s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+
 
 }
 #purple-button {
@@ -187,3 +192,11 @@ h2 {
         margin:0px auto;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }

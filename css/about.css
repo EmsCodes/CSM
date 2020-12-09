@@ -26,9 +26,12 @@ img {
 a {
     font-size:1em;
 }
-/*max-width*/
+.museum-image {
+    margin-top:75px;
+}
 
 .max-width {
-    max-width:75%;
+    width:75%;
+    max-width:500px;
     margin:0px auto;
 }

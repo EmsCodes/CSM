@@ -3,14 +3,13 @@ h1 {
     font-size:1.8em;
     font-weight:500;
     text-transform:capitalize;
-    width:75%;
     max-width:600px;
     margin:0px auto;
     margin-top:35px;
     margin-bottom:40px;
 }
 h2 {
-    font-size:1.3em;
+    font-size:1.5em;
     margin-top:20px;
     font-weight:300;
     margin-bottom:30px;
@@ -49,10 +48,14 @@ h3 {
     margin-bottom:0px;
 }
 /*opening hours/visit/admission*/
+.visit-nav {
+    margin:0px auto;
+}
 .section {
     width:75%;
     max-width:600px;
     margin:0px auto;
+    margin-bottom:50px;
 }
 .open {
     margin-bottom:50px;
@@ -66,11 +69,11 @@ h3 {
 /* For kids/teachers/families */
 .blue-background {
     background:var(--blue-color-gradient);
-    min-height:300px;
+    min-height:350px;
 }
 .purple-background {
     background:var(--purple-color-gradient);
-    min-height:300px;
+    min-height:350px;
 }
 .text-width {
     width:65%;
@@ -84,6 +87,18 @@ h3 {
     margin:0px auto;
     margin-top:45px;
     margin-bottom:45px;
+}
+@media (min-width: 600px){
+    h4 {
+        font-size:1.6em;
+        margin-top:100px;
+    }
+}
+@media (min-width: 800px){
+    h4 {
+        font-size:2em;
+        margin-top:100px;
+    }
 }
 
 

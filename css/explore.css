@@ -1,6 +1,7 @@
 /*MOBILE*/
-main {
-    margin-bottom:200px;
+.main {
+    max-width:1300px;
+    margin:0px auto;
 }
 /*text styling*/
 h1 {
