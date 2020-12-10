@@ -81,10 +81,8 @@ p {
     border-radius:50%;
     padding:40px 25px;
     color:var(--white-text-color);
-    animation-name:rotate;
-    animation-duration:15s;
-    animation-iteration-count:1;
-    animation-timing-function:linear;
+    animation-name:color;
+    animation:3s ease 1s infinite none running;
 
 
 }
@@ -193,10 +191,11 @@ h2 {
     }
 }
 
-@keyframes rotate {
-    from {
-        transform:rotate(0deg);
+@keyframes color {
+    0%, 100%{
+        background:blue;
     }
-    to {
-        transform:rotate(360deg);
+    50% {
+        background:purple;
     }
+}

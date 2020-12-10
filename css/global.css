@@ -9,7 +9,10 @@
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 }
-
+.main {
+    max-width:1300px;
+    margin:0px auto;
+}
 /*hamburger menu*/
 
 header nav li a {
@@ -60,6 +63,12 @@ nav {
 
 h1, h2, h3,h4, h5{
     font-family: Georgia, serif;
+}
+h1 {
+    font-size:2em;
+}
+h2 {
+    
 }
 li { 
    text-decoration:none; 
@@ -277,7 +286,6 @@ footer {
 }
 footer ul {
     list-style-type:none;
-    text-align:left;
 }
 footer a {
     color:#000;
@@ -371,7 +379,6 @@ nav li {
 .fas {
     font-size:2em;
     margin-right:50px;
-    margin-top:20px;
 }
     }
 
@@ -397,6 +404,13 @@ nav li {
 @media (min-width: 1300px){
 
 /*Nav/header*/
+header {
+    flex-direction:column;
+    align-items:center;
+}
+header .fas {
+    display:none;
+}
 nav {
     position:static;
     display:block;
@@ -404,25 +418,24 @@ nav {
     font-weight:500;
     padding:0px;
     z-index:1;
-    margin-left:120px;
+    margin-bottom:10px;
 }
 nav li {
     display:inline;
     margin-right:75px;
 }
-.fas {
-    display:none;
-}
+
 header{
     justify-content:start;
 }
 .logo {
-    margin-right:
+    margin-top:20px;
+    width:150px;
+    margin-bottom:0px;
 }
+
 /* Social Icons*/
-.social-icons {
-    visibility:visible;
-}
+.social-icons 
 /*explore div for second nav*/
 .exhibitions {
     margin-left:22%;

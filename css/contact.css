@@ -1,4 +1,4 @@
-main {
+body {
     background-image:url(/images/Mainpicture.jpg);
     height:auto;
     background-repeat: no-repeat;
@@ -6,28 +6,31 @@ main {
     color:#fff;
 }
 h1 {
-    font-size:1.6em;
     font-weight:500;
-    margin-top:75px;
 }
-h2 {
-    font-size:1em;
-    margin-top:50px;
-}
+
 fieldset {
-    max-width:75%;
     text-align:left;
-    height:auto;
     border:none;
+    width:75%;
     margin:0px auto;
+    margin-top:100px;
 }
 textarea {
+    width:250px;
     margin-top:15px;
-    margin-bottom:45px;
+    margin-bottom:50px;
 }
-.cta {
+.text {
+    font-weight:100;
+    font-size:1.2em;
+}
+.cta-contact {
+    background:var(--purple-color-gradient);
+    font-size:1em;
+    text-align:center;
+    width:125px;
     padding:10px;
-    margin:
 }
 #name {
     margin:10px;
@@ -37,8 +40,32 @@ textarea {
 }
 #message {
     margin:10px;
-    height:auto;
 }
-footer {
-    margin:
+footer{
+    background:#fff;
+    margin-top:50px;
+    padding:30px;
+}
+footer p {
+    color:#000;
+}
+
+@media (min-width:600px) {
+    fieldset {
+        text-align:left;
+        height:auto;
+        border:none;
+        max-width:30%;
+        margin:0px auto;
+    }
+    textarea {
+        width:auto;
+        margin-top:15px;
+        margin-bottom:45px;
+    }
+}
+@media (min-width:1300px) {
+    h1 {
+        margin-top:250px;
+    }
 }
