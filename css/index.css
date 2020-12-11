@@ -1,16 +1,15 @@
 /*Mobile*/
 h1 {
     color:var(--white-text-color);
-    font-size:1.8em;
     text-align:center;
     font-weight:500;
     margin-top:150px;
 }
 h2 {
     color:var(--white-text-color);
-    font-size:1.4em;
     text-align:center;
     font-weight:100;
+    font-style:italic;
     margin-top:20px;
     margin-bottom:75px;
 }
@@ -83,8 +82,6 @@ p {
     color:var(--white-text-color);
     animation-name:color;
     animation:3s ease 1s infinite none running;
-
-
 }
 #purple-button {
     margin-left:30px;
@@ -108,11 +105,10 @@ footer {
 
 @media (min-width: 600px){
     h1 {
-        font-size:2em;
         margin-top:175px;
     }
     h2 {
-        font-size:1.6em;
+        
     }
     h3, h4 {
         color:var(--white-text-color);
@@ -138,13 +134,11 @@ footer {
 @media (min-width: 800px){
 
 h1 {
-    font-size:3.5em;
     margin-top:200px;
 }
 h2 {
     margin-top:40px;
     margin-bottom:75px;
-    font-size:1.8em;
 }
 /*index CTA*/
 .CTA {
@@ -158,8 +152,9 @@ h2 {
 
 @media (min-width: 1300px){
     h1 {
-        font-size:4em;
-        margin-top:200px;
+        margin-top:275px;
+    }
+    h2 {
     }
     .blur {
         margin:25px;

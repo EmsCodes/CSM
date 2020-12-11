@@ -1,15 +1,12 @@
 /*Mobile*/
 h1 {
-    font-size:1.8em;
     font-weight:500;
-    text-transform:capitalize;
     max-width:600px;
     margin:0px auto;
     margin-top:35px;
     margin-bottom:40px;
 }
 h2 {
-    font-size:1.5em;
     margin-top:20px;
     font-weight:300;
     margin-bottom:30px;
@@ -46,6 +43,7 @@ h3 {
     max-width:150px;
     padding:10px 0px 10px 20px;
     margin-bottom:0px;
+    margin-top:0px;
 }
 /*opening hours/visit/admission*/
 .visit-nav {

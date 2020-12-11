@@ -34,9 +34,11 @@ nav {
     position:absolute;
     right:0;
     padding-top:20px;
-    padding-right:100px;
+    padding-right:75px;
     padding-left:20px;
+    padding-bottom:20px;
     z-index:1;
+    margin-top:15px;
 }
 
 #hamburger-menu {
@@ -68,7 +70,7 @@ h1 {
     font-size:2em;
 }
 h2 {
-    
+    font-size:1.6em;
 }
 li { 
    text-decoration:none; 
@@ -138,17 +140,23 @@ p{
     margin:10px 10px;
 }
 
-.fab, .far {
-    display:none;
-}
 .fas {
     color:var(--blue-color);
     font-size:1.6em;
     margin-top:5px;
 }
-.social-icons {
-    display:none;
+.fab{
+    font-size:1.6em;
+    margin-right:20px;
+    margin-bottom:25px;
+    color:var(--blue-color);
+
 }
+.far {
+    font-size:1.6em;
+    color:var(--blue-color);
+}
+
 
 /*cta*/
 
@@ -200,7 +208,7 @@ p{
     color:var(--white-text-color);
     background-color:var(--background-text-blur);
     padding:20px;
-    width:75%;
+    width:50%;
     max-width:600px;
     position:absolute;
     margin:10% 25%;
@@ -283,19 +291,36 @@ p{
 
 footer {
     text-align:center;
-}
-footer ul {
-    list-style-type:none;
+    padding-bottom:50px;
 }
 footer a {
-    color:#000;
+    color:var(--blue-color);
 }
-
+footer p {
+    color:#000;
+    padding-top:35px;
+    font-family:georgia, verdana, arial;
+    font-size:1.3em;
+}
+footer ul li {
+    display:inline;
+    font-style:italic;
+    margin-right:15px;
+}
+.copyright {
+    margin-top:35px;
+}
 
 /*Media Queries*/
 
 @media (min-width: 600px){
 
+    h1 {
+        font-size:2.2em;
+    }
+    h2 {
+        font-size:1.8em;
+    }
 .background-size {
     height:300px;
 }
@@ -318,6 +343,9 @@ footer a {
     #monkey {
         object-position:25% 25%;
     }
+    #claw {
+        object-position:bottom;
+    }
     /*museum main image*/
     .image-size {
         object-position: 25% 35%;
@@ -327,6 +355,7 @@ footer a {
 /*NAV/icons/LOGO*/
 nav {
     font-size:1.3em;
+    margin-top:0px;
     padding:40px 150px 40px 40px;
 }
 nav li {
@@ -335,17 +364,29 @@ nav li {
 }
 .logo {
     width:125px;
-    margin:10px 10px;
 }
 .fas {
     font-size:2em;
     margin-right:50px;
     margin-top:10px;
 }
+.fab{
+    font-size:2em;
+    margin-right:20px;
+}
+.far {
+    font-size:2em;
+}
 }
 
 @media (min-width: 800px){
 
+    h1 {
+        font-size:2.4em;
+    }
+    h2 {
+        font-size:2em;
+    }
 .background-size {
         height:400px;
     }
@@ -377,7 +418,6 @@ nav li {
     margin:10px 10px;
 }
 .fas {
-    font-size:2em;
     margin-right:50px;
 }
     }
@@ -403,6 +443,13 @@ nav li {
 
 @media (min-width: 1300px){
 
+    h1 {
+        font-size:3.5em;
+    }
+    h2 {
+        font-size:2.8em;
+    }   
+
 /*Nav/header*/
 header {
     flex-direction:column;
@@ -418,24 +465,26 @@ nav {
     font-weight:500;
     padding:0px;
     z-index:1;
-    margin-bottom:10px;
+    margin:0px;
 }
 nav li {
     display:inline;
     margin-right:75px;
 }
-
-header{
-    justify-content:start;
-}
 .logo {
-    margin-top:20px;
+    margin-top:10px;
     width:150px;
     margin-bottom:0px;
 }
 
 /* Social Icons*/
-.social-icons 
+.fab{
+    font-size:2.5em;
+    margin-right:20px;
+}
+.far {
+    font-size:2.5em;
+}
 /*explore div for second nav*/
 .exhibitions {
     margin-left:22%;
@@ -449,7 +498,7 @@ header{
     }
 /*museum main image*/
 .image-size {
-    height:300px;
+    height:400px;
 }
  /*explore image*/
 .background-image {
