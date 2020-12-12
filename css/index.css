@@ -42,6 +42,7 @@ main {
     margin:0px auto;
 }
 body {
+    background-color:#000;
     background-image:url(/images/Mainpicture.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
