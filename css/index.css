@@ -42,10 +42,12 @@ main {
     margin:0px auto;
 }
 body {
-    background-color:#000;
+    background:var(--blue-color-gradient);
     background-image:url(/images/Mainpicture.jpg);
     background-repeat: no-repeat;
+    height:auto;
     background-attachment:fixed;
+    background-size:cover;
 
 }
 p {
