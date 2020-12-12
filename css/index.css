@@ -41,10 +41,9 @@ main {
 }
 body {
     background-image:url(/images/Mainpicture.jpg);
-    max-width:600px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    background-attachment:scroll;
+    background-size:contain;
 }
 p {
     color:var(--white-text-color);
