@@ -42,10 +42,11 @@ main {
     margin:0px auto;
 }
 body {
-    background-image:url(/images/main-image-mobile.jpg);
+    background-image:url(/images/Mainpicture.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-size:cover;
+    background-size:auto;
+
 }
 p {
     color:var(--white-text-color);
