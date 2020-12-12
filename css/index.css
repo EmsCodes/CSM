@@ -45,7 +45,7 @@ body {
     background-image:url(/images/Mainpicture.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-size:auto;
+    background-size:cover;
 
 }
 p {
