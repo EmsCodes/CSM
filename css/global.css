@@ -5,9 +5,10 @@
 --white-text-color:#fff;
 --blue-color:#0342A6;
 --purple-color:#5B2ADE;
---background-text-blur:rgba(20, 20, 20, 0.7);
+--background-text-blur:rgba(20, 20, 20, 0.6);
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
+--text-shadow:2px 2px 4px black;
 }
 .main {
     max-width:1300px;
@@ -207,10 +208,10 @@ p{
     color:var(--white-text-color);
     background-color:var(--background-text-blur);
     padding:20px;
-    width:50%;
+    width:60%;
     max-width:600px;
     position:absolute;
-    margin:10% 25%;
+    margin:10% 15%;
     border-radius:25px 0px 25px 0px;
 }
 .background-size {

@@ -4,6 +4,7 @@ h1 {
     text-align:center;
     font-weight:500;
     margin-top:150px;
+    text-shadow:var(--text-shadow);
 }
 h2 {
     color:var(--white-text-color);
@@ -12,6 +13,7 @@ h2 {
     font-style:italic;
     margin-top:20px;
     margin-bottom:75px;
+    text-shadow:var(--text-shadow);
 }
 h3, h4 {
     color:var(--white-text-color);
@@ -42,8 +44,8 @@ main {
 body {
     background-image:url(/images/main-image-mobile.jpg);
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:stretch;
+    background-attachment:scroll;
+    background-size:contain;
 }
 p {
     color:var(--white-text-color);
@@ -80,6 +82,7 @@ p {
     display:inline-block;
     font-size:1em;
     background:var(--blue-color-gradient);
+    text-shadow:var(--text-shadow);
     border-radius:50%;
     padding:40px 25px;
     color:var(--white-text-color);

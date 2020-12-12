@@ -11,6 +11,7 @@ h1 {
     margin-top:65px;
     padding:5px;
     font-weight:300;
+    text-shadow:var(--text-shadow);
     
 }
 h2 {
@@ -27,6 +28,7 @@ h4 {
     width:65%;
     margin:0px auto;
     margin-top:60px;
+    text-shadow:var(--text-shadow);
 }
 h5 {
     color:#000;
