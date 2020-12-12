@@ -43,7 +43,7 @@ body {
     background-image:url(/images/main-image-mobile.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-size:cover;
+    background-size:stretch;
 }
 p {
     color:var(--white-text-color);
