@@ -36,7 +36,7 @@ img {
 }
 main {
     width:75%;
-    max-width:750px;
+    max-width:650px;
     margin:0px auto;
 }
 body {
@@ -71,6 +71,9 @@ p {
     width:100%;
     max-width:750px;
     height:300px;
+}
+.flex {
+    flex-grow:none;
 }
 /*index CTA*/
 .CTA {
@@ -171,7 +174,6 @@ h2 {
     /*images*/
     .index-images{
         width:100%;
-        max-width:400px;
         height:350px;
     }
     .flex-index {
@@ -180,8 +182,8 @@ h2 {
         justify-content:space-evenly;
     }
     main {
-        width:75%;
-        max-width:1500px;
+        max-width:75%;
+        max-width:1600px;
         margin:0px auto;
     }
 }

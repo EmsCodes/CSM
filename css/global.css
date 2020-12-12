@@ -146,15 +146,14 @@ p{
     margin-top:5px;
 }
 .fab{
-    font-size:1.6em;
+    font-size:2em;
     margin-right:20px;
     margin-bottom:25px;
-    color:var(--blue-color);
+    margin-top:20px;
 
 }
 .far {
-    font-size:1.6em;
-    color:var(--blue-color);
+    font-size:2em;
 }
 
 
@@ -288,27 +287,36 @@ p{
 
 /*footer*/
 
-
 footer {
     text-align:center;
+    color:#fff;
     padding-bottom:50px;
+    background:var(--blue-color-gradient);
 }
-footer a {
-    color:var(--blue-color);
+footer .fas {
+    color:#fff;
 }
 footer p {
-    color:#000;
     padding-top:35px;
     font-family:georgia, verdana, arial;
     font-size:1.3em;
+    max-width:75%;
+    margin:0px auto;
 }
 footer ul li {
-    display:inline;
     font-style:italic;
-    margin-right:15px;
+    list-style-type:none;
+    margin-top:10px;
+}
+.footer-navigation {
+    display:inline-block;
+    margin:0px auto;
+    text-align:left;
+    font-size:1.2em;
 }
 .copyright {
-    margin-top:35px;
+    margin-top:50px;
+    font-family:georgia, verdana, arial;
 }
 
 /*Media Queries*/
