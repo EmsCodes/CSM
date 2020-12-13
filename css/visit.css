@@ -14,14 +14,15 @@ h2 {
     
 }
 h4 {
-    font-size:1.3em;
+    font-size:2em;
     background-color:var(--background-text-blur);
     font-weight:100;
     text-align:center;
     color:var(--white-text-color);
     width:65%;
     margin:0px auto;
-    margin-top:80px;
+    margin-top:60px;
+    text-shadow:var(--text-shadow);
 }
 h5 {
     color:#000;
@@ -44,6 +45,7 @@ h3 {
     padding:10px 0px 10px 20px;
     margin-bottom:0px;
     margin-top:0px;
+    text-shadow:var(--text-shadow);
 }
 /*opening hours/visit/admission*/
 .visit-nav {
@@ -86,9 +88,12 @@ h3 {
     margin-top:45px;
     margin-bottom:45px;
 }
+
+/*Media Queries*/
+
 @media (min-width: 600px){
     h4 {
-        font-size:1.6em;
+        font-size:2.5em;
         margin-top:100px;
     }
 /* For kids/teachers/families */
@@ -104,7 +109,28 @@ h3 {
 }
 @media (min-width: 800px){
     h4 {
-        font-size:2em;
-        margin-top:100px;
+        font-size:2.5em;
+        margin-top:150px;
+    }
+    h2 {
+        font-size:1.6em;
     }
 }
+@media (min-width: 1100px){
+    h2 {
+        font-size:1.6em;
+    }
+}
+@media (min-width: 1300px){
+    h1 {
+        font-size:3em;
+    }
+    h2 {
+        font-size:1.8em;
+    }
+    h4 {
+        font-size:3em;
+        margin-top:175px;
+    }
+}
+

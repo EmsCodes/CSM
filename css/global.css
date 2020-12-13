@@ -59,13 +59,17 @@ nav {
 .inactive{
     opacity:50%;
     text-decoration:none;
+    transition:color 0.5s;
+}
+.inactive:hover{
+    opacity:100%;
 }
 
 /* Mobile first */
 
 
 h1, h2, h3,h4, h5{
-    font-family: Georgia, serif;
+    font-family: Georgia, "palatino Linotype", serif ;
 }
 h1 {
     font-size:2.3em;
@@ -77,7 +81,7 @@ li {
    text-decoration:none; 
 }
 body {
-    font-family:verdana, Tahoma, sans-serif;
+    font-family:Verdana, Tahoma, sans-serif;
     margin:0px;
 }
 header {
@@ -102,6 +106,7 @@ p{
 
 .contact {
     color:var(--blue-color);
+    text-decoration:underline;
 }
 
 
@@ -170,6 +175,10 @@ p{
     margin-top:50px;
     padding:3px 3px;
     margin-bottom:50px;
+    transition:all 0.5s;
+}
+.cta:hover {
+    background:var(--blue-color-gradient);
 }
 
 .to-top {
@@ -181,18 +190,25 @@ p{
     margin-top:50px;
     padding:10px 10px;
     margin-bottom:50px;
+    transition:all 0.5s;
+}
+.to-top:hover {
+    background:var(--blue-color-gradient);
 }
 
 /*secondary navigation "explore" and "visit"*/
 
 .navigation {
-
     display:inline-block;
     background:var(--blue-color-gradient);
     font-size:1em;
     padding:15px 10px;
     margin-bottom:20px;
     margin-right:10px;
+    transition:all 0.5s;
+}
+.navigation:hover {
+    background:var(--purple-color-gradient);
 }
 /*explore div for second nav*/
 .exhibitions {
@@ -209,7 +225,6 @@ p{
     background-color:var(--background-text-blur);
     padding:20px;
     width:60%;
-    max-width:600px;
     position:absolute;
     margin:10% 15%;
     border-radius:25px 0px 25px 0px;
@@ -308,6 +323,10 @@ footer ul li {
     font-style:italic;
     list-style-type:none;
     margin-top:10px;
+    transition:all 0.5s;
+}
+footer ul li:hover {
+    font-size:1.3em;
 }
 .footer-navigation {
     display:inline-block;
@@ -448,6 +467,13 @@ nav li {
     .museum-image {
         object-position:
     }
+    /* Social Icons*/
+.fab{
+    font-size:2.6em;
+}
+.far {
+    font-size:2.6em;
+}
 }
 
 @media (min-width: 1300px){
@@ -488,11 +514,10 @@ nav li {
 
 /* Social Icons*/
 .fab{
-    font-size:2.5em;
-    margin-right:20px;
+    font-size:3em;
 }
 .far {
-    font-size:2.5em;
+    font-size:3em;
 }
 /*explore div for second nav*/
 .exhibitions {
@@ -514,7 +539,15 @@ nav li {
     background-position:center;
 }
 .white-blur-fullscreen-text {
-    margin:15% 25%;
+    width:35%;
+    max-width:600px;
+    margin:15% 30%;
 }
 
+}
+@media (min-width: 1400px){
+    .white-blur-fullscreen-text {
+        left:50%;
+        margin-left:-300px;
+    }
 }

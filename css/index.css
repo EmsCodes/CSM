@@ -65,6 +65,10 @@ p {
     width:125px;
     padding:12px 12px;
     margin:0px auto;
+    transition:all 1s ease;
+}
+.link:hover{
+    background:var(--purple-color-gradient);
 }
 /*background-color/blur*/
 .blur {
@@ -83,20 +87,27 @@ p {
 /*index CTA*/
 .CTA {
     display:inline-block;
-    font-size:1em;
+    font-size:1.1em;
     background:var(--blue-color-gradient);
     text-shadow:var(--text-shadow);
     border-radius:50%;
     padding:40px 25px;
+    margin-right:25px;
     color:var(--white-text-color);
-    animation-name:color;
-    animation:3s ease 1s infinite none running;
+    transition:all 1s ease;
 }
 #purple-button {
-    margin-left:30px;
+    margin-top:15px;
     padding-left:35px;
     padding-right:35px;
     background:var(--purple-color-gradient);
+    transition:all 1s ease;
+}
+.CTA:hover {
+    background:var(--purple-color-gradient);
+}
+#purple-button:hover {
+    background:var(--blue-color-gradient);
 }
 .index-cta {
     text-align:center;
@@ -127,12 +138,14 @@ footer {
     }
     /*index CTA*/
     .CTA {
-        font-size:1.1em;
-        padding:45px 30px;
+        font-size:1.3em;
+        padding:45px 25px;
+        margin-right:0px;
     }
     #purple-button {
         padding-left:40px;
         padding-right:40px;
+        margin-left:25px;
     }
     .index-cta {
         text-align:center;
@@ -191,14 +204,5 @@ h2 {
         max-width:75%;
         max-width:1600px;
         margin:0px auto;
-    }
-}
-
-@keyframes color {
-    0%, 100%{
-        background:blue;
-    }
-    50% {
-        background:purple;
     }
 }
