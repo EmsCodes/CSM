@@ -547,6 +547,7 @@ nav li {
 }
 @media (min-width: 1400px){
     .white-blur-fullscreen-text {
+        margin:10% 0px;
         left:50%;
         margin-left:-300px;
     }
