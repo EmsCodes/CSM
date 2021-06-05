@@ -12,6 +12,8 @@
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous">
     </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">  
   </head>
   <body>
     <header>
@@ -25,11 +27,11 @@
        <input type="checkbox" id="hamburger-menu"/>
          <nav> 
            <ul>
-             <li><a href="index.html"class="inactive">Home</a></li>
-             <li><a href="explore.html">Explore</a></li>
-             <li><a href="visit.html"class="inactive">Visit</a></li>
-             <li><a href="about.html"class="inactive">About</a></li>
-             <li><a href="contact.html"class="inactive">Contact</a></li>
+             <a href="index.html"><li class="inactive">Home</li></a>
+             <a href="explore.html"><li>Explore</li></a>
+             <a href="visit.html"><li class="inactive">Visit</li></a>
+             <a href="about.html"><li class="inactive">About</li></a>
+             <a href="contact.html"><li class="inactive">Contact</li></a>
            </ul>
          </nav>
         </div>
@@ -59,17 +61,17 @@
                 or scroll through and pretend you are going through the museum!
             </p>
         <div class="exhibitions">
-            <ul aria-label="exhibitions">
-                <li class="navigation"><a href="#cosmology">Cosmology</a></li>
-                <li class="navigation"><a href="#evolution">Evolution</a></li>
-                <li class="navigation"><a href="#robotics">Robotics/AI</a></li>
-                <li class="navigation"><a href="#ecology">Ecology</a></li>
-                <li class="navigation"><a href="#biology">Biology/Medicine</a></li>
+            <ul aria-label="exhibitions navigation">
+                <a href="#cosmology"><li class="navigation" href="#cosmology">Cosmology</li></a>
+                <a href="#evolution"><li class="navigation" href="#evolution">Evolution</li></a>
+                <a href="#robotics"><li class="navigation" href="#robotics">Robotics/AI</li></a>
+                <a href="#ecology"><li class="navigation" href="#ecology">Ecology</li></a>
+                <a href="#biology"><li class="navigation" href="#biology">Biology/Medicine</li></a>
             </ul>
         </div>
         
         <!-- Cosmology-section -->   
-       <section>
+       <section id="cosmology">
             <div class="background-image-2 background-size">
                 <h3>Cosmology</h3>
                 <div>
@@ -104,7 +106,7 @@
        </section>
 
        <!-- Evolution-section -->
-       <section>
+       <section id="evolution">
             <div class="background-image-4 background-size">
                 <h3>Evolution</h3>
                 <h4><b>Discover the origins of life</b></h4>
@@ -141,7 +143,7 @@
         </section>
 
         <!-- Biology/Medicine-section -->
-        <section>
+        <section id="biology">
             <div class="background-image-7 background-size">
                 <h3>Biology and Medicine</h3>
                 <h4><b>Explore the history of medicine</b></h4>
@@ -185,7 +187,7 @@
         </section>
 
         <!-- Ecology-section -->
-        <section>
+        <section id="ecology">
             <div class="background-image-9 background-size">
                 <h3>Ecology</h3>
                 <h4><b>Explore how to create a sustainable future</b></h4>
@@ -266,23 +268,29 @@
             </div>
         </section>
         <div class="to-top">
-            <a href="explore.html" type="button">To the top</a>
+            <a href="#" type="button">To the top</a>
         </div>
     </div>
     </main>
   </body>
   <footer>
-    <p>Follow us on Facebook, Instagram and Twitter</p>
-    <div class="icons">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter-square"></i>
+    <div id="footer-flex">
+      <section>
+        <p>Follow us on Facebook, Instagram and Twitter</p>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </section>
+      <section>
+      <ul class="footer-navigation" aria-label="">
+        <li><a href="about.html"><i class="fas fa-rocket"></i>About us</a></li>
+        <li><a href="visit.html"><i class="fas fa-user-astronaut"></i>Adress/location</a></li>
+        <li><a href="contact.html"><i class="fas fa-globe-europe"></i>Contact</a></li>
+      </ul>
+      </section>
     </div>
-    <ul class="footer-navigation" aria-label="">
-      <li><a href="about.html"><i class="fas fa-rocket"></i>About us</a></li>
-      <li><a href="visit.html"><i class="fas fa-user-astronaut"></i>Adress/location</a></li>
-      <li><a href="contact.html"><i class="fas fa-globe-europe"></i>Contact</a></li>
-    </ul>
     <div class="copyright">
         &copy;Endre Makra-Stenkløv
     </div>

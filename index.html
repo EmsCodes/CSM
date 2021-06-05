@@ -12,6 +12,8 @@
       src="https://kit.fontawesome.com/39e20b04f8.js"
       crossorigin="anonymous">
     </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
   </head>
   <body>
       <header>
@@ -19,17 +21,17 @@
                 <img class="logo" src="images/logo-2.svg" alt="Community Science Museums logo">
             </a>
             <div class="drop-down">
-            <label for="hamburger-menu">
+            <label for="hamburger-menu" tabindex="0">
               <i class="fas fa-bars"></i>
-          </label>
-          <input type="checkbox" id="hamburger-menu"/>
+            </label>  
+          <input type="checkbox" id="hamburger-menu" tabindex="0" />
             <nav> 
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="explore.html"class="inactive">Explore</a></li>
-                <li><a href="visit.html"class="inactive">Visit</a></li>
-                <li><a href="about.html"class="inactive">About</a></li>
-                <li><a href="contact.html"class="inactive">Contact</a></li>
+                <a href="index.html"><li>Home</li></a>
+                <a href="explore.html"><li class="inactive">Explore</li></a>
+                <a href="visit.html"><li class="inactive">Visit</li></a>
+                <a href="about.html"><li class="inactive">About</li></a>
+                <a href="contact.html"><li class="inactive">Contact</li></a>
               </ul>
             </nav>
             </div>
@@ -103,17 +105,23 @@
     </main>
   </body>
   <footer>
-    <p>Follow us on Facebook, Instagram and Twitter</p>
-    <div class="icons">
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-twitter-square"></i>
+    <div id="footer-flex">
+      <section>
+        <p>Follow us on Facebook, Instagram and Twitter</p>
+        <div class="icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </section>
+      <section>
+      <ul class="footer-navigation" aria-label="">
+        <li><a href="about.html"><i class="fas fa-rocket"></i>About us</a></li>
+        <li><a href="visit.html"><i class="fas fa-user-astronaut"></i>Adress/location</a></li>
+        <li><a href="contact.html"><i class="fas fa-globe-europe"></i>Contact</a></li>
+      </ul>
+      </section>
     </div>
-    <ul class="footer-navigation" aria-label="">
-      <li><a href="about.html"><i class="fas fa-rocket"></i>About us</a></li>
-      <li><a href="visit.html"><i class="fas fa-user-astronaut"></i>Adress/location</a></li>
-      <li><a href="contact.html"><i class="fas fa-globe-europe"></i>Contact</a></li>
-    </ul>
     <div class="copyright">
         &copy;Endre Makra-Stenkløv
     </div>

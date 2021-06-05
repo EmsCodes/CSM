@@ -72,7 +72,7 @@ h3 {
     min-height:350px;
 }
 .purple-background {
-    background:var(--purple-color-gradient);
+    background:url(/images/purple-background.jpeg)15%/ contain;
     min-height:350px;
 }
 .text-width {
