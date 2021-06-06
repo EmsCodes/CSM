@@ -3,7 +3,7 @@ h1 {
     color:#fff;
     text-align:center;
     text-shadow:var(--text-shadow);
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 300;
     width:90%;
     margin:0 auto;
@@ -38,8 +38,11 @@ h3 {
 h4{
     font-size:1.2em;
     font-family: var(--main-font);
-    margin-bottom:25px;
+    margin:0 auto;
+    margin-bottom:30px;
     margin-top:25px;
+    max-width:75%;
+    
 }
 h5 {
     color:#000;
@@ -58,7 +61,7 @@ main {
     z-index: 50;
 }
 body {
-    background-image:url(/images/new-2.jpeg);
+    background-image:url(/images/new-bg.jpg);
     background-repeat: no-repeat;
     height:auto;
     background-attachment:fixed;
@@ -192,7 +195,7 @@ footer {
         font-size:3em;
     }
     h2{
-        font-size:2.5em;
+        font-size:2.2em;
         font-weight: 200;
     }
     .blur {

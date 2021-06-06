@@ -1,25 +1,42 @@
-body {
-    background-image:url(/images/Mainpicture.jpg);
+body::before {
+    content:"";
+    background-color:#00000070;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left: 0;
+}
+body{
+    background-image:url(/images/new-bg.jpg);
     height:auto;
     background-repeat: no-repeat;
     background-size:cover;
-    color:#fff;
+}
+main, footer{
+    z-index: 50;
+}
+main{
+    position: relative;
 }
 
 h1 {
     font-weight:500;
-    text-shadow:2px 2px 4px black;
+    text-shadow:2px 2px 2px black;
 }
-
+h1, p{
+    color:#fff;
+}
 fieldset {
     text-align:left;
+    color:#fff;
     border:none;
     width:75%;
     margin:0px auto;
     margin-top:100px;
 }
 textarea {
-    width:250px;
+    width:75%;
     margin-top:15px;
     margin-bottom:50px;
 }
@@ -51,6 +68,7 @@ textarea {
 footer{
     margin-top:100px;
     padding:30px;
+    position:relative;
 }
 /*message sent page*/
 .message-sent-page {
@@ -84,11 +102,12 @@ footer{
         margin-bottom:45px;
     }
 }
-@media (min-width:1300px) {
+@media (min-width:1000px) {
     h1 {
-        font-size:2.5em;
+        font-size:2.2em;
         margin-top:250px;
     }
-    body {
+    fieldset{
+        font-size:1.2em;
     }
 }

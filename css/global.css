@@ -7,7 +7,7 @@
 --white-text-color:#fff;
 --blue-color:#0342A6;
 --purple-color:#5B2ADE;
---background-text-blur:rgba(0, 0, 0, 0.624);
+--background-text-blur:rgba(0, 0, 0, 0.405);
 --blue-color-gradient:linear-gradient(to right bottom,#0460C9 , #0447CC, #03318C, #021946, #011640);
 --purple-color-gradient:linear-gradient( to right bottom,#6B39F1, #5627D3, #441AB2, #2E107D, #1D0953, #14063A);
 --text-shadow:2px 2px 4px black;
@@ -317,9 +317,9 @@ p{
 }
 /*museum visit/about main image*/
 .image-size{
-    width:100%;
-    height:200px;
-    background-size:cover;
+    width:auto;
+    height:125px;
+    background-size:contain;
     background-repeat:no-repeat;
     margin-top:75px;
 }
@@ -390,8 +390,7 @@ footer ul li:hover {
     }
     /*museum main image*/
     .image-size {
-        object-position: 25% 35%;
-        margin-top:75px;
+        height:175px;
     }
     .white-blur-fullscreen-text {
         position:absolute;
@@ -440,7 +439,7 @@ footer ul li:hover {
     }
     /*museum main image*/
     .image-size {
-        height:250px;
+        height:200px;
     }
     /*NAV/icons/LOGO*/
     nav li {
@@ -469,6 +468,9 @@ footer ul li:hover {
     }
     .background-size {
         height:400px;
+    }
+    .image-size {
+        height:225px;
     }
 }
 
@@ -534,7 +536,10 @@ footer ul li:hover {
     .background-size {
         height:450px;
     }
-
+    .image-size {
+        height:275px;
+        width:100%;
+    }
 }
 @media (min-width: 1400px){
     #footer-flex{
@@ -547,5 +552,9 @@ footer ul li:hover {
     }
     footer{
         padding-top:40px;
+    }
+    .image-size {
+        height:300px;
+        width:100%;
     }
 }
