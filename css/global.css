@@ -195,13 +195,17 @@ p{
 /*secondary navigation "explore" and "visit"*/
 
 .navigation {
-    display:inline-block;
     background:var(--blue-color-gradient);
     font-size:1em;
     padding:15px 10px;
-    margin-bottom:20px;
     margin-right:10px;
     transition:all 0.5s;
+}
+.exhibitions li, .visit-nav li{
+    list-style: none;
+    display:inline-block;
+    margin-bottom:30px;
+    margin-top:25px;
 }
 .navigation:hover {
     background:var(--purple-color-gradient);

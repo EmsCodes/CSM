@@ -104,6 +104,10 @@ main p {
     background-color:var(--background-text-blur);
     margin:0 auto;
     margin-bottom:25px;
+    transition: all 0.2s ease-in-out;
+}
+.blur:hover {
+    transform: scale(1.05);
 }
 /*images*/
 .index-images{
